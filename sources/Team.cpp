@@ -18,11 +18,12 @@ namespace ariel
         if(_sizeOfTeam == 10) throw runtime_error("The team is full!");
         _team.push_back(member);
         _sizeOfTeam++;
+
     }
 
     void Team::attack(Team * other)
     {
-        return;
+        
     }
 
     int Team::stillAlive() const
@@ -33,12 +34,13 @@ namespace ariel
             if(_team[i]->isAlive()) isAlive++;
         }
 
-        return isAlive;
+        //return isAlive;
+        return 0;
     }
 
     void Team::print()
     {
-        return;
+
     }
 
 }

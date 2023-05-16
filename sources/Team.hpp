@@ -17,6 +17,9 @@ namespace ariel
         
         public:
             Team(Character * leader);
+            // Team(const Team &other);
+            // Team& operator=(const Team& other);
+            // Team(Team&& other);
             ~Team(); // destructor
             void add(Character * member);
             void attack(Team * other);

@@ -21,7 +21,7 @@ namespace ariel
             void hit(int dmg);
             std::string getName() const;
             Point getLocation() const;
-            std::string print() const;
+            virtual std::string print();
 
     };
 }

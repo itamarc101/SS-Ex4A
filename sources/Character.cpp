@@ -6,7 +6,7 @@ namespace ariel
 {
     bool Character::isAlive() const
     {
-        return _hp > 0;
+        return _health > 0;
     }
 
     double Character::distance(Character *other)
@@ -17,7 +17,7 @@ namespace ariel
     void Character::hit(int dmg)
     {
         if(dmg < 0) throw invalid_argument("dmg can't be negative!");
-        _hp -= dmg;
+        _health -= dmg;
     }
 
     string Character::getName() const
@@ -30,9 +30,9 @@ namespace ariel
         return _location;
     }
 
-    string Character::print() const
+    string Character::print() 
     {
-        return "FIX THIS";
+        return " ";
         // ostringstream ostream;
         // ostream << "Name: " << _name << "HP: " << to_string(_hp) << "Location: " << getLocation().print(); 
         // return ostream.str();
